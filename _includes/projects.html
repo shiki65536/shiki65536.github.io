@@ -1,0 +1,53 @@
+
+<!-- Portfolio Grid Section -->
+ <!-- projects -->
+ <section class="section projects">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>latest works</h2>
+      <div class="underline"></div>
+      <p class="projects-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        repudiandae cupiditate ea facilis incidunt, non sapiente! Debitis
+        magnam, earum assumenda obcaecati cum quaerat facere ratione molestiae
+        dignissimos aliquid blanditiis architecto voluptates delectus
+        voluptate animi nulla! Autem explicabo perspiciatis officia ea.
+      </p>
+    </div>
+    <!--end of section title -->
+    <div class="section-center projects-center">
+      <!-- -->
+      {% for post in site.posts %}
+      <article class="single-project">
+        <div class="project-container">
+          <img src="./images/project-1.jpeg" alt="single project" />
+          <a href="{{ post.url }}" class="project-icon">
+            <i class="fas fa-home"></i>
+          </a>
+        </div>
+        <div class="project-details">
+          <h4>{{ post.title }}</h4>
+          <p>
+            {{ post.description }}
+          </p>
+          <div class="project-stack">
+            {% for tag in post.tags %}
+            <span>{{tag}}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="project-footer">
+          <span>
+            <i class="fab fa-github"></i>
+          </span>
+          <a href="https://www.github.com"><i class="fas fa-code"></i> source code</a>
+        </div>
+      </article>
+      {% endfor %}
+      <!-- -->
+
+      <!-- end of single project -->
+    </div>
+  </section>
+
+  <!-- end of projects -->
