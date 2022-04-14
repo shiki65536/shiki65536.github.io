@@ -1,0 +1,15 @@
+---
+title: 🏴‍☠️ Looting The Treasure Chest
+layout: default
+date: 2022-02-28
+png: ./img/posts/looting_game.png
+mp4: ./img/posts/looting_game.mp4
+gif: ./img/posts/looting_game.gif
+page: https://focused-yonath-f7d956.netlify.app/
+github: https://github.com/shiki65536/looting-treasure
+alt: Looting The Treasure Chest
+category: Web Development
+tag: [React, CSS]
+description: A memory game for matching and pairing cards in a limited time & turns.
+
+---

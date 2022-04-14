@@ -1,4 +1,4 @@
-    <!-- blog -->
+<!-- blog -->
     <section class="section blogs">
         <!-- section title -->
         <div class="section-title">
@@ -8,7 +8,7 @@
         <!--end of section title -->
         <div class="section-center blogs-center">
             {% for blog in site.categories.web %}
-          <a href="projects.html" class="blog-4">
+          <a href="projects.html" class="blog-{{forloop.index0}}">
             <article class="blog">
               <img
                 src="./images/project-4.jpeg"

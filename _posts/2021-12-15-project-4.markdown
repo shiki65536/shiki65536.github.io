@@ -1,0 +1,15 @@
+---
+title: 📝 Milktea note keeper
+layout: default
+date: 2021-12-15
+png: ./img/posts/note_keeper.png
+mp4: ./img/posts/note_keeper.mp4
+gif: ./img/posts/note_keeper.gif
+page: https://neon-unicorn-eeecfd.netlify.app/
+github: https://github.com/shiki65536/-Milktea-Note-Keeper
+alt: Milktea note keeper
+category: Web Development
+tag: [React, CSS, javascript]
+description: Baic online note. Add, edit, delete your notes.
+
+---

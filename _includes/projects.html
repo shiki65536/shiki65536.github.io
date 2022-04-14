@@ -1,17 +1,12 @@
 
 <!-- Portfolio Grid Section -->
  <!-- projects -->
- <section class="section projects">
+ <section class="section projects" id="projects">
     <!-- section title -->
     <div class="section-title">
       <h2>latest works</h2>
       <div class="underline"></div>
       <p class="projects-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-        repudiandae cupiditate ea facilis incidunt, non sapiente! Debitis
-        magnam, earum assumenda obcaecati cum quaerat facere ratione molestiae
-        dignissimos aliquid blanditiis architecto voluptates delectus
-        voluptate animi nulla! Autem explicabo perspiciatis officia ea.
       </p>
     </div>
     <!--end of section title -->
@@ -20,8 +15,11 @@
       {% for post in site.posts %}
       <article class="single-project">
         <div class="project-container">
-          <img src="./images/project-1.jpeg" alt="single project" />
-          <a href="{{ post.url }}" class="project-icon">
+          <video width="100%" height="100%" muted autoplay loop>
+            <source src="{{ post.mp4 }}"  type="video/mp4" >
+          </video>
+ 
+          <a href="{{ post.page }}" class="project-icon">
             <i class="fas fa-home"></i>
           </a>
         </div>
@@ -40,7 +38,7 @@
           <span>
             <i class="fab fa-github"></i>
           </span>
-          <a href="https://www.github.com"><i class="fas fa-code"></i> source code</a>
+          <a href="{{ post.github }}"><i class="fas fa-code"></i> source code</a>
         </div>
       </article>
       {% endfor %}

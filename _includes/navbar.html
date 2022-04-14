@@ -2,7 +2,11 @@
   <nav class="navbar" id="nav">
     <div class="nav-center">
       <div class="nav-header">
-        <img src="{{ "/logo.svg" | prepend: site.baseurl }}" alt="logo" class="nav-logo">
+        <div class="nav-logo">
+          <span class="before"></span>
+          <span class="logo-text">SHIKI65536</span>
+          <span class="after"></span>
+        </div>
         <button class="toggle-btn" id="toggle-btn">
           <i class="fas fa-bars"></i>
         </button>
@@ -10,16 +14,16 @@
       <!-- navlinks -->
       <ul class="nav-links">
         <li>
-          <a href="index.html">home</a>
+          <a href="{{ "/" | prepend: site.baseurl }}">home</a>
+        </li>
+        <!-- <li>
+          <a href="{{ "#about" | prepend: site.baseurl }}">about</a>
+        </li> -->
+        <li>
+          <a href="{{ "#projects" | prepend: site.baseurl }}">projects</a>
         </li>
         <li>
-          <a href="about.html">about</a>
-        </li>
-        <li>
-          <a href="projects.html">projects</a>
-        </li>
-        <li>
-          <a href="contact.html">contact</a>
+          <a href="{{ "#contact" | prepend: site.baseurl }}">contact</a>
         </li>
       </ul>
     </div>
@@ -34,16 +38,16 @@
       <!-- nav-links -->
       <ul class="sidebar-links">
         <li>
-          <a href="index.html">home</a>
+          <a href="{{ "/" | prepend: site.baseurl }}">home</a>
+        </li>
+        <!-- <li>
+          <a href="{{ "#about" | prepend: site.baseurl }}">about</a>
+        </li> -->
+        <li>
+          <a href="{{ "#projects" | prepend: site.baseurl }}">projects</a>
         </li>
         <li>
-          <a href="about.html">about</a>
-        </li>
-        <li>
-          <a href="projects.html">projects</a>
-        </li>
-        <li>
-          <a href="contact.html">contact</a>
+          <a href="{{ "#contact" | prepend: site.baseurl }}">contact</a>
         </li>
       </ul>
       <!-- social icons -->
@@ -54,23 +58,18 @@
           </a>
         </li>
         <li>
-          <a href="https://www.twitter.com" class="social-link">
+          <a href="https://www.linkedin.com/in/shih-chi-%EF%BD%97en-690526211/" class="social-link">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.twitter.com" class="social-link">
-            <i class="fab fa-squarespace"></i>
+          <a href="https://github.com/shiki65536" class="social-link">
+            <i class="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.twitter.com" class="social-link">
-            <i class="fab fa-behance"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" class="social-link">
-            <i class="fab fa-instagram"></i>
+          <a href="https://twitter.com/shiki65536" class="social-link">
+            <i class="fab fa-twitter-square"></i>
           </a>
         </li>
       </ul>

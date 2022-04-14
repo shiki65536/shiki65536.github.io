@@ -1,0 +1,15 @@
+---
+title: 🗂️ task assigner
+layout: default
+date: 2022-04-10
+png: ./img/posts/task_assigner.png
+gif: ./img/posts/task_assigner.gif
+mp4: ./img/posts/task_assigner.mp4
+alt: task assigner
+github: https://github.com/shiki65536/task-assigner
+page: https://cute-travesseiro-e1e4f8.netlify.app/
+category: Web Development
+tag: [React, Javascipt, CSS, firebase, RWD]
+description: Task assginer. Helping you to tag your members, check the assignments, and discuss on a open forum. 
+
+---

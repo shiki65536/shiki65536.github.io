@@ -1,0 +1,15 @@
+---
+title: 📊 Githuber Rover
+layout: default
+date: 2022-03-15
+png: ./img/posts/github_rover.png
+mp4: ./img/posts/github_rover.mp4
+gif: ./img/posts/github_rover.gif
+page: https://vibrant-johnson-0466cf.netlify.app/
+github: https://github.com/shiki65536/githuber-rover
+alt: Githuber Rover
+category: Web Development
+tag: [React, CSS, RESTfulAPI, Chart.js, RWD]
+description: Searching githubers and showing their status with charts, infinite pagination.
+
+---
