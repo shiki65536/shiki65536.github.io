@@ -10,6 +10,6 @@ github: https://github.com/shiki65536/-Milktea-Note-Keeper
 alt: Milktea note keeper
 category: Web Development
 tag: [React, CSS, javascript, MERN, mongodb, Nodejs, express]
-description: Baic online note. Add, edit, delete your notes.
+description: Baic online note. Add, edit, delete, pin your notes with GET, POST, PUT, DELETE, PATCH methods.
 
 ---
