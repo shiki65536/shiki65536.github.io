@@ -10,6 +10,6 @@ github: https://github.com/shiki65536/task-assigner
 page: https://cute-travesseiro-e1e4f8.netlify.app/
 category: Web Development
 tag: [React, Javascipt, CSS, firebase, RWD]
-description: Task assginer. Helping you to tag your members, check the assignments, and discuss on a open forum. 
+description: Task assginer. Login an open forum, check/publish assignments, tag members, and discuss with each other. 
 
 ---
