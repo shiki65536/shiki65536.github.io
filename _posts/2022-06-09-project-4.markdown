@@ -1,5 +1,5 @@
 ---
-title: 💸 expensetracker
+title: 💸 expense tracker
 layout: default
 date: 2022-06-09
 png: ./img/posts/expense_tracker.png
@@ -9,7 +9,8 @@ alt: task assigner
 github: https://github.com/shiki65536/expense-tracker
 page: https://obscure-fjord-53798.herokuapp.com/
 category: Web Development
-tag: [React, Javascipt, CSS, firebase, RWD]
-description: Basic MERN tracker to record personal expense. Register / Login / Logout, Browse / Create / Edit / Delete, GET / POST / PUT / DELETE. guest@gmail.com/123456 
+tag: [React, Javascipt, CSS, MERN, redux]
+description: Basic MERN tracker to record personal expense. 
+Sample <account/password> <guest@gmail.com/123456> 
 
 ---
