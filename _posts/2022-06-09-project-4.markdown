@@ -10,7 +10,6 @@ github: https://github.com/shiki65536/expense-tracker
 page: https://obscure-fjord-53798.herokuapp.com/
 category: Web Development
 tag: [React, Javascipt, CSS, MERN, redux]
-description: Basic MERN tracker to record personal expense.<br> 
-Sample account:guest@gmail.com<br> sample password:123456 
+description: Basic MERN tracker to record personal expense.<br>Sample account/password:<br>guest@gmail.com/123456 
 
 ---
