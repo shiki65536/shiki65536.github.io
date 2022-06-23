@@ -1,15 +1,15 @@
 ---
-title: 🗂️ task assigner
+title: 📊 Githuber Rover
 layout: default
 date: 2022-04-10
-png: ./img/posts/task_assigner.png
-gif: ./img/posts/task_assigner.gif
-mp4: ./img/posts/task_assigner.mp4
-alt: task assigner
-github: https://github.com/shiki65536/task-assigner
-page: https://cute-travesseiro-e1e4f8.netlify.app/
+png: ./img/posts/github_rover.png
+mp4: ./img/posts/github_rover.mp4
+gif: ./img/posts/github_rover.gif
+page: https://vibrant-johnson-0466cf.netlify.app/
+github: https://github.com/shiki65536/githuber-rover
+alt: Githuber Rover
 category: Web Development
-tag: [React, Javascipt, CSS, firebase, RWD]
-description: Task assginer. Login an open forum, check/publish assignments, tag members, and discuss with each other. 
+tag: [React, CSS, RESTfulAPI, Chart.js, RWD]
+description: Searching githubers and showing their status with charts, infinite pagination.
 
 ---
