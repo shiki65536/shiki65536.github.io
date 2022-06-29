@@ -5,7 +5,7 @@ date: 2022-06-09
 png: ./img/posts/expense_tracker.png
 gif: ./img/posts/expense_tracker.gif
 mp4: ./img/posts/expense_tracker.mp4
-alt: task assigner
+alt: expense tracker
 github: https://github.com/shiki65536/expense-tracker
 page: https://obscure-fjord-53798.herokuapp.com/
 category: Web Development

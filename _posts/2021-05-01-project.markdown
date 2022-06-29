@@ -1,0 +1,15 @@
+---
+title: ⚖️ Jou and Jou Patent Offices
+layout: default
+date: 2021-12-15
+png: ./img/posts/jou_and_jou.png
+mp4: ./img/posts/jou_and_jou.mp4
+gif: ./img/posts/jou_and_jou.gif
+page: https://www.joupo.com/en-us/
+github: 
+alt: jou and jou patent offices
+category: Web Development
+tag: [WordPress, SEO, CSS, RWD]
+description: A whole official website using WordPress with RWD.
+
+---
