@@ -1,7 +1,7 @@
 ---
 title: 🐍 snake game
 layout: default
-date: 2022-06-23
+date: 2021-04-23
 png: ./img/posts/snake_game.png
 gif: ./img/posts/snake_game.gif
 mp4: ./img/posts/snake_game.mp4
