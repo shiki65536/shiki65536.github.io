@@ -6,6 +6,7 @@ png: ./img/posts/snake_game.png
 gif: ./img/posts/snake_game.gif
 mp4: ./img/posts/snake_game.mp4
 alt: snake game
+page: https://github.com/shiki65536/snake-game
 github: https://github.com/shiki65536/snake-game
 page: 
 category: Python
