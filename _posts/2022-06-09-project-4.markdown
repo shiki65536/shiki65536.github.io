@@ -7,7 +7,7 @@ gif: ./img/posts/expense_tracker.gif
 mp4: ./img/posts/expense_tracker.mp4
 alt: expense tracker
 github: https://github.com/shiki65536/expense-tracker
-page: https://obscure-fjord-53798.herokuapp.com/
+page: https://expense-tracker-9zik.onrender.com
 category: Web Development
 tag: [React, Javascipt, CSS, MERN, redux, mongodb]
 description: Basic MERN tracker to record personal expense.<br>Sample account/password:<br>guest@gmail.com/123456 
