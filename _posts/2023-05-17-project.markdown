@@ -8,7 +8,7 @@ mp4: ./img/posts/moodash_app.mp4
 alt: Moodash app
 page: https://github.com/shiki65536/moodash-app
 github: https://github.com/shiki65536/moodash-app
-category: Applicaion
-tag: [Java, App, Android]
-description: Android application development with JAVA.
+category: App
+tag: [Java, App, Android, Firebase]
+description: Android application development with navigation drawer, room, map, firebase authentication, firebase database, and work manager.
 ---
