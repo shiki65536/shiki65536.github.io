@@ -10,5 +10,5 @@ page: https://github.com/shiki65536/moodash-app
 github: https://github.com/shiki65536/moodash-app
 category: App
 tag: [Java, App, Android, Firebase]
-description: Android application development with navigation drawer, room, map, firebase authentication, firebase database, and work manager.
+description: Android application with navigation drawer, room, map, firebase authentication, firebase database, and work manager.
 ---
