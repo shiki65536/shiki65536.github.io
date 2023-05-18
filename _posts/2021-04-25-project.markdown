@@ -1,0 +1,14 @@
+---
+title: 🐢 Turtle crossing
+layout: default
+date: 2021-04-25
+png: ./img/posts/turtle-crossing.png
+gif: ./img/posts/turtle-crossing.gif
+mp4: ./img/posts/turtle-crossing.mp4
+alt: Findle
+page: https://github.com/shiki65536/turtle-crossing
+github: https://github.com/shiki65536/turtle-crossing
+category: Python
+tag: [Python, game]
+description: Python game.
+---
