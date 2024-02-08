@@ -1,0 +1,14 @@
+---
+title: 📐 Head Orientation Detection
+layout: default
+date: 2024-02-01
+png: ./img/posts/orientation.png
+gif: ./img/posts/orientation.gif
+mp4: ./img/posts/orientation.mp4
+alt: Head Orientation Detection
+page: https://github.com/shiki65536/head-orientation
+github: https://github.com/shiki65536/head-orientation
+category: App
+tag: [Python, JRDB, Human Pose, Computer Vision]
+description: Detect head orientation by joints.
+---
