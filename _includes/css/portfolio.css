@@ -74,7 +74,8 @@ body {
 ul {
   list-style-type: none;
 }
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
   color: var(--clr-primary-5);
 }
@@ -174,6 +175,7 @@ p {
 .underline {
   width: 5rem;
   height: 0.25rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.25rem;
   background: var(--clr-primary-5);
   margin-left: auto;
@@ -181,14 +183,14 @@ p {
 }
 .section-title {
   margin-bottom: 4rem;
-  text-align:  center;
+  text-align: center;
 }
 .bg-grey {
   background: var(--clr-grey-10);
 }
 /* social links */
 .social-links {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   width: 15rem;
   display: flex;
   justify-content: space-between;
@@ -301,10 +303,11 @@ navlogo animation
   display: grid;
   overflow: hidden;
 }
-.nav-logo .before, .after {
+.nav-logo .before,
+.after {
   width: 7rem;
   height: 0.15rem;
-  margin:0 auto 0;
+  margin: 0 auto 0;
   background: var(--clr-primary-5);
   transition: var(--transition);
 }
@@ -316,7 +319,7 @@ navlogo animation
 }
 @keyframes line-b {
   from {
-    transform: translateX(-150%); 
+    transform: translateX(-150%);
   }
   to {
     transform: translateX(0%);
@@ -324,7 +327,7 @@ navlogo animation
 }
 @keyframes line-a {
   from {
-    transform: translateX(150%); 
+    transform: translateX(150%);
   }
 
   to {
@@ -460,7 +463,7 @@ Hero
 .hero {
   margin-top: -5rem;
   padding-top: 5rem;
-  height: 100vh;
+  height: 50vh;
   background: var(--clr-primary-10);
   position: relative;
 }
@@ -521,15 +524,16 @@ Hero
   .hero-img {
     display: block;
     grid-row: 1/1;
-    grid-column: 7/-1;
+    grid-column: 7/11;
   }
   .hero-img-svg {
+    top: 50px;
     width: 100%;
-    height: 420px;
+    height: 240px;
     position: relative;
     display: block;
     grid-row: 1/1;
-    grid-column: 7/-1;
+    grid-column: 7/11;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -614,7 +618,6 @@ Projects
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
-  
 }
 
 .single-project {
@@ -703,7 +706,6 @@ Connect
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
   background: var(--clr-grey-10);
-  
 }
 .video-container {
   position: absolute;
@@ -1216,4 +1218,3 @@ Contact Page
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-
