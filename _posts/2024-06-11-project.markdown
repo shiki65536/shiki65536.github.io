@@ -1,0 +1,14 @@
+---
+title: 🖼️ object detect album
+layout: default
+date: 2024-06-01
+png: ./img/posts/object-detect.png
+gif: ./img/posts/object-detect.gif
+mp4: ./img/posts/object-detect.mp4
+alt: Object Detection
+page: https://fit5225assignment3.jcdinteractiveads.com/
+github: https://github.com/shiki65536/object-detect-album
+category: App
+tag: [REACT, AWS, Python, JavaScript]
+description: Detect objects in uploaded photos .
+---
