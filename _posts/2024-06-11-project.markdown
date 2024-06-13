@@ -10,5 +10,5 @@ page: https://fit5225assignment3.jcdinteractiveads.com/
 github: https://github.com/shiki65536/object-detect-album
 category: App
 tag: [REACT, AWS, Python, JavaScript]
-description: Detect objects in uploaded photos .
+description: Detect objects in uploaded photos. Using Cognito, API gateway, Lambda, Dynamo DB, S3 Bucket.
 ---

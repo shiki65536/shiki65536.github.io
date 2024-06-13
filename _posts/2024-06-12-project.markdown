@@ -9,6 +9,6 @@ alt: Monash Rental Space
 page: https://github.com/shiki65536/monash-rental-space
 github: https://github.com/shiki65536/monash-rental-space
 category: App
-tag: [JAVA, APP, text base]
-description: Mock rental service for housing.
+tag: [JAVA, APP]
+description: Rental service for housing. Equipped with login/registration, wishlist and application functions.
 ---
