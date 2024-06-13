@@ -1,51 +1,47 @@
-
 <!-- Portfolio Grid Section -->
- <!-- projects -->
- <section class="section projects" id="projects">
-    <!-- section title -->
-    <div class="section-title">
-      <h2>latest works</h2>
-      <div class="underline"></div>
-      <p class="projects-text">
-      </p>
-    </div>
-    <!--end of section title -->
-    <div class="section-center projects-center">
-      <!-- -->
-      {% for post in site.posts %}
-      <article class="single-project">
-        <div class="project-container">
-          <video width="100%" height="350" muted autoplay loop>
-            <source src="{{ post.mp4 }}"  type="video/mp4" >
-          </video>
- 
-          <a href="{{ post.page }}" class="project-icon">
-            <i class="fas fa-home"></i>
-          </a>
-        </div>
-        <div class="project-details">
-          <h4>{{ post.title }}</h4>
-          <p>
-            {{ post.description }}
-          </p>
-          <div class="project-stack">
-            {% for tag in post.tags %}
-            <span>{{tag}}</span>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="project-footer">
-          <span>
-            <i class="fab fa-github"></i>
-          </span>
-          <a href="{{ post.github }}"><i class="fas fa-code"></i> source code</a>
-        </div>
-      </article>
-      {% endfor %}
-      <!-- -->
+<!-- projects -->
+<section class="section projects" id="projects">
+  <!-- section title -->
+  <div class="section-title">
+    <h2>my works</h2>
+    <div class="underline"></div>
+    <p class="projects-text"></p>
+  </div>
+  <!--end of section title -->
+  <div class="section-center projects-center">
+    <!-- -->
+    {% for post in site.posts %}
+    <article class="single-project">
+      <div class="project-container">
+        <video width="100%" height="350" muted autoplay loop>
+          <source src="{{ post.mp4 }}" type="video/mp4" />
+        </video>
 
-      <!-- end of single project -->
-    </div>
-  </section>
+        <a href="{{ post.page }}" class="project-icon">
+          <i class="fas fa-home"></i>
+        </a>
+      </div>
+      <div class="project-details">
+        <h4>{{ post.title }}</h4>
+        <p>{{ post.description }}</p>
+        <div class="project-stack">
+          {% for tag in post.tags %}
+          <span>{{tag}}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="project-footer">
+        <span>
+          <i class="fab fa-github"></i>
+        </span>
+        <a href="{{ post.github }}"><i class="fas fa-code"></i> source code</a>
+      </div>
+    </article>
+    {% endfor %}
+    <!-- -->
 
-  <!-- end of projects -->
+    <!-- end of single project -->
+  </div>
+</section>
+
+<!-- end of projects -->
