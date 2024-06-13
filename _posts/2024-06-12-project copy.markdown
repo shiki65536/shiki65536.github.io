@@ -1,0 +1,14 @@
+---
+title: 🏠 Monash Rental Space
+layout: default
+date: 2024-06-10
+png: ./img/posts/monash-rental-space.png
+gif: ./img/posts/monash-rental-space.gif
+mp4: ./img/posts/monash-rental-space.mp4
+alt: Monash Rental Space
+page: https://github.com/shiki65536/monash-rental-space
+github: https://github.com/shiki65536/monash-rental-space
+category: App
+tag: [JAVA, APP, text base]
+description: Mock rental service for housing.
+---
