@@ -14,8 +14,8 @@ rss.items.first(3).each do |item|
   title = item.title || "untitled"
   content = item.respond_to?(:content_encoded) ? item.content_encoded : item.description
   content = content || ""
-  content_text = content.gsub(/<[^>]*>/, '').strip  # 去掉 HTML
-  excerpt = content_text[0, 30]  # 前30個字
+  content_text = content.gsub(/<[^>]*>/, '').strip  # clean HTML
+  excerpt = content_text[0, 30]  # first 30 words
   pub_date = item.pubDate || Time.now
   link = item.link
   title_slug = title.gsub(/[^0-9A-Za-z.\-]/, "_")
