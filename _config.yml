@@ -4,7 +4,21 @@ baseurl:
 # Site settings
 title: SHIKI 65536
 email: shiki65536@gmail.com
-description: "A junior web developer and programmer. "
+description: "Junior Software Engineer exploring Data, Cloud, and AI solutions. "
+
+collections:
+  medium_posts:
+    output: true
+  medium:
+    output: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-get
+
+jekyll_get:
+  - data: medium_feed
+    json: "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@shiki65536"
 
 # Team names, titles and social links
 people:
@@ -48,14 +62,14 @@ social:
   - title: facebook
     url: https://www.facebook.com/shiki65536
   - title: linkedin
-    url: https://www.linkedin.com/in/shiki-wen-65536/
+    url: https://www.linkedin.com/in/shiki-wen/
   - title: github
     url: http://github.com/shiki65536
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Holman Hall HH 417, 38 College Walk
-  - line: Clayton, Victoria, Australia
+  - line: 5/18-22 Capon Street, Malvern East
+  - line: Melbourne, Victoria, Australia
 
 # Build settings
 markdown: kramdown
