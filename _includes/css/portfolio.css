@@ -629,6 +629,9 @@ Projects
 .project-container img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  height: 200px; /* 固定高度 */
+  object-fit: cover; /* 裁切並保持比例 */
+  width: 100%;
 }
 .project-container video {
   border-top-left-radius: var(--radius);
