@@ -1,0 +1,13 @@
+I"	<table>
+  <tbody>
+    <tr>
+      <td>If you’re like me, writing on Medium but also maintain a Jekyll-powered personal site. Keeping both in sync manually is… tedious. Here’s a simple way to automate the process using Ruby and GitHub Actions.1. Pulling Medium RSS FeedMedium exposes an RSS feed for every user:https://medium.com/feed/@yourusernameIn Ruby, we can fetch and parse it using the built-in rss library:require 'rss'require 'open-uri'rss_url = "https://medium.com/feed/@yourusername"rss = RSS::Parser.parse(URI.open(rss_url).read, false)rss.items.each do</td>
+      <td>item</td>
+      <td>puts item.title # extract content, date, link, tags, etc.endHere’s how to clean up HTML and generate Markdown files ready for Jekyll:content_text = item.content_encoded.gsub(/&lt;[^&gt;]<em>&gt;/, '').stripFile.write("_medium/#{item.title_slug}.md", content_text)Add metadata like date, tags, link, and even a preview image in the YAML front matter.2. Handling Tags and ImagesMedium’s RSS category fields hold tags. Images can be extracted from the &lt;img&gt; in the content:tags = item.categories.map(&amp;:content)img_match = content.match(/&lt;img.</em>?src="(.*?)"/)image_url = img_match ? img_match[1] : 'https://via.placeholder.com/350x200'3. Automating Updates with GitHub ActionsCreate a workflow in .github/workflows/medium_sync.yml:name: Sync Medium Postson: schedule: - cron: "0 0 * * 0" # every Sunday workflow_dispatch:jobs: update-medium: runs-on: ubuntu-latest steps: - uses: actions/checkout@v4 - uses: ruby/setup-ruby@v1 with: ruby-version: 3.2 - run: gem install rss - run: ruby _scripts/fetch_medium.rb - run:</td>
+      <td>git config user.name "github-actions" git config user.email "github-actions@github.com" git add _medium/ git diff - quiet</td>
+      <td> </td>
+      <td>(git commit -m "Update Medium posts" &amp;&amp; git push)The _scripts/fetch_medium.rb script runs every week and commits new posts to the repo. GitHub Pages will automatically pick up the updates.4. Why It Works- RSS feed gives structured access to your posts, tags, and dates.- Ruby + RSS library keeps parsing simple.- GitHub Actions handles automation and publishing seamlessly.With this setup, my Jekyll blog finally can mirror my Medium content with minimal effort.</td>
+    </tr>
+  </tbody>
+</table>
+:ET
