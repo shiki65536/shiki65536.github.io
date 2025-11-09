@@ -1,0 +1,9 @@
+I"�<table>
+  <tbody>
+    <tr>
+      <td>Fixing query in OpenSearch — The .keyword SolutionThis week, we found our API endpoint failing when searching by Identifier with <code class="language-plaintext highlighter-rouge">0974727407</code> or <code class="language-plaintext highlighter-rouge">QB02003325</code> as input.The Root CauseOpenSearch/Elasticsearch stores string fields in two formats:Text field (<code class="language-plaintext highlighter-rouge">identifier</code>) — analyzed and tokenized for full-text searchKeyword field** (<code class="language-plaintext highlighter-rouge">identifier.keyword</code>) — stored exactly as-is for exact matchingOur query was using the analyzed text field, which probably caused:Leading zeros stripped: <code class="language-plaintext highlighter-rouge">0974727407</code> → <code class="language-plaintext highlighter-rouge">974727407</code>Case normalization: <code class="language-plaintext highlighter-rouge">QB02003325</code> → <code class="language-plaintext highlighter-rouge">qb02003325</code>The SolutionAdd <code class="language-plaintext highlighter-rouge">.keyword</code> suffix to the field name then we can do the exact match queries:async findByIdentifier(identifier: string[]</td>
+      <td>number[], include?: string[]): Promise&lt;ServicePoints[]&gt; { return this.automap(await this.findBy('identifier.keyword', identifier, include));}Key TakeawayWhen querying OpenSearch/Elasticsearch for IDs, codes, or any field requiring exact matches, always use the <code class="language-plaintext highlighter-rouge">.keyword</code>subfield. The analyzed text field is for full-text search, not precise matching.</td>
+    </tr>
+  </tbody>
+</table>
+:ET
