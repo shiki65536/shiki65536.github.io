@@ -10,7 +10,7 @@ FileUtils.mkdir_p(OUTPUT_DIR)
 puts "Fetching Medium RSS feed..."
 rss = RSS::Parser.parse(URI.open(MEDIUM_RSS).read, false)
 
-rss.items.first(3).each do |item|
+rss.items.first(6).each do |item|
   title = item.title || "untitled"
   content = item.respond_to?(:content_encoded) ? item.content_encoded : item.description
   content = content || ""
