@@ -1,0 +1,14 @@
+---
+title: 📺 Ted Watch List
+layout: default
+date: 2025-11-23
+png: ./img/posts/ted-watch-list.png
+gif: ./img/posts/ted-watch-list.gif
+mp4: ./img/posts/ted-watch-list.mp4
+alt: Ted Watch List
+page: hhttps://ted-watch-list.onrender.com/
+github: https://github.com/shiki65536/ted-watch-list
+category: App
+tag: [Mern, APP, YoutubeAPI, API, ReactJS, NodeJS, mongoDB]
+description: Web app to browse, favorite, mark as watched, and manage TED, TED-Ed, and TEDx YouTube videos.
+---
