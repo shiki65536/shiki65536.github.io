@@ -1,7 +1,7 @@
 ---
 title: 📊 Githuber Rover
 layout: default
-date: 2022-04-10
+date: 2023-06-13
 png: ./img/posts/github_rover.png
 mp4: ./img/posts/github_rover.mp4
 gif: ./img/posts/github_rover.gif
@@ -11,5 +11,4 @@ alt: Githuber Rover
 category: Web Development
 tag: [React, CSS, RESTfulAPI, Chart.js, RWD]
 description: Searching githubers and showing their status with charts, infinite pagination.
-
 ---

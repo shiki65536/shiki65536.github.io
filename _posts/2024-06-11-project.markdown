@@ -1,7 +1,7 @@
 ---
 title: 🖼️ object detect album
 layout: default
-date: 2024-06-01
+date: 2024-06-11
 png: ./img/posts/object-detect.png
 gif: ./img/posts/object-detect.gif
 mp4: ./img/posts/object-detect.mp4
