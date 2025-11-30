@@ -27,10 +27,8 @@
       </div>
 
       <div class="project-footer">
-        <span
-          ><i class="fa-regular fa-calendar"></i> {{ post.date | date: "%-d %b
-          %Y" }}</span
-        >
+        <i class="fab fa-calendar"></i>
+        <span> {{ post.date | date: "%-d %b %Y" }}</span>
       </div>
     </article>
     {% endfor %}
