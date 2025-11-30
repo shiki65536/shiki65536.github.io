@@ -7,10 +7,8 @@ email: shiki65536@gmail.com
 description: "Junior Software Engineer exploring Data, Cloud, and AI solutions. "
 
 collections:
-  medium_posts:
-    output: true
   medium:
-    output: false
+    output: true
 
 plugins:
   - jekyll-feed
