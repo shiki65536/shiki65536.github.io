@@ -18,8 +18,9 @@ rss.items.first(6).each do |item|
   excerpt = content_text[0, 30]  # first 30 words
   pub_date = item.pubDate || Time.now
   link = item.link
-  title_slug = title.gsub(/[^0-9A-Za-z.\-]/, "_")
-  filename = "#{OUTPUT_DIR}/#{title_slug.downcase}.md"
+  date_prefix = pub_date.strftime("%Y-%m-%d")
+  title_slug = title.gsub(/[^0-9A-Za-z.\-]/, "_").gsub(/_+/, "_").downcase
+  filename = "#{OUTPUT_DIR}/#{date_prefix}-#{title_slug}.md"
   tags = item.categories ? item.categories.map(&:content) : []
   tags = ["medium"] if tags.empty?
 
