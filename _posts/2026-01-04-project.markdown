@@ -9,6 +9,6 @@ alt: Patent AI Translation System
 page: https://patent-ai-api.onrender.com/docs#/
 github: https://github.com/shiki65536/patent-ai
 category: Api
-tag: [RAG, AI, Claude, API, Python, supaBase, PostgreSQLe]
+tag: [RAG, AI, Claude, API, Python, supaBase, PostgreSQL]
 description: RAG-powered Patent Translation System with Claude.
 ---
