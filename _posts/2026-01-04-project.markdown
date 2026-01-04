@@ -1,0 +1,14 @@
+---
+title: 📚 Patent AI Translation System (JP → ZH)
+layout: default
+date: 2026-01-04
+png: ./img/posts/patent-ai.png
+gif: ./img/posts/patent-ai.gif
+mp4: ./img/posts/patent-ai.mp4
+alt: Patent AI Translation System
+page: https://patent-ai-api.onrender.com/docs#/
+github: https://github.com/shiki65536/patent-ai
+category: Api
+tag: [RAG, AI, Claude, API, Python, supaBase, PostgreSQLe]
+description: RAG-powered Patent Translation System with Claude.
+---
