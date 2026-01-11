@@ -1,0 +1,14 @@
+---
+title: 🔀 Go Concurrent Crawler
+layout: default
+date: 2026-01-11
+png: ./img/posts/go-crawler.png
+gif: ./img/posts/go-crawler.gif
+mp4: ./img/posts/go-crawler.mp4
+alt: Patent AI Translation System
+page: https://github.com/shiki65536/go-crawler
+github: https://github.com/shiki65536/go-crawler
+category: Api
+tag: [GO, crawler, Concurrency, Backend, DevOps]
+description: A lightweight concurrent web crawler.
+---
