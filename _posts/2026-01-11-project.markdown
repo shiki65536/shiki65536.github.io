@@ -9,6 +9,6 @@ alt: Patent AI Translation System
 page: https://github.com/shiki65536/go-crawler
 github: https://github.com/shiki65536/go-crawler
 category: Api
-tag: [GO, crawler, Concurrency, Backend, DevOps]
+tag: [GO, crawler, Concurrency, Backend, DevOps, API]
 description: A lightweight concurrent web crawler.
 ---
