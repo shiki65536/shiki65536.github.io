@@ -1,0 +1,10 @@
+---
+layout: default
+title: "OpenSearch Didn’t Fail. It Just Returned Nothing."
+date: Sat, 28 Mar 2026 21:11:00 +0000
+excerpt: "This week, an API broke when q"
+link: "https://medium.com/@shiki65536/opensearch-didnt-fail-it-just-returned-nothing-955ca5dfa91e?source=rss-374d8f1302a3------2"
+image: "https://cdn-images-1.medium.com/max/500/1*dInL_2fdFzS6ooM3_waKKA.jpeg"
+tags: ["debugging", "opensearch", "elasticsearch", "tech-debt", "backend"]
+---
+This week, an API broke when querying a new table.Same OpenSerarch query for IDs. Old indexes work. New indexes return nothing.No error. Just silence.What happenedThe API was doing:&quot;term&quot;: { &quot;id.keyword&quot;: value }After checking _mapping:Legacy tablesid: {type: text}id.keyword: {type: keyword}New tablesid: {type: keyword}The API query is asking for id.keyword,but the new index doesn’t even have that field.Nerdy fact. is not just naming, it’s structure.id.keyword means:id is an objectkeyword is a subfieldBut in the new schema is id: {type: keyword}.A field cannot be both a value and a container.FixOption 1: Query fallback (quick fix)&quot;bool&quot;: { &quot;should&quot;: [ { &quot;term&quot;: { &quot;id.keyword&quot;: value } }, { &quot;term&quot;: { &quot;id&quot;: value } } ], &quot;minimum_should_match&quot;: 1 }}✅ Works across old + new indices❌ Leaks schema inconsistency into APIOption 2: Keep `id.keyword` for compatibility&quot;id&quot;: { &quot;type&quot;: &quot;keyword&quot;, &quot;fields&quot;: { &quot;keyword&quot;: { &quot;type&quot;: &quot;keyword&quot; } }}✅ Old APIs keep working✅ Schema becomes externally consistent❌ Redundant⚠️ Can’t alias `id.keyword` when `id` is already a leaf fieldOption 3: Reindex and fix it properly&quot;id&quot;: { &quot;type&quot;: &quot;keyword&quot; }✅ Clean, correct model✅ No more `.keyword` nonsense (IDs → always `keyword`)❌ Requires migration effortWhat I would doShort term → Option 1Long term → Option 3However, if ID requires .keyword to work…The schema is already lying to you.IDs are not text.

@@ -1,0 +1,10 @@
+---
+layout: default
+title: "Authentication Passed. Authorization Failed Quietly."
+date: Sat, 16 May 2026 22:51:00 +0000
+excerpt: "Mutation works. Query fails. S"
+link: "https://medium.com/@shiki65536/authentication-passed-authorization-failed-quietly-76dd0dcde4a4?source=rss-374d8f1302a3------2"
+image: "https://cdn-images-1.medium.com/max/1024/1*SmlU0uzQx8TMWKovFfOlXA.png"
+tags: ["okta", "graphql", "oauth2", "distributed-systems", "devops"]
+---
+Mutation works. Query fails. Same token. Same environment.Most people think credential rotation is simple:old secret expires → replace secret → doneProduction reality is rarely that clean.Recently hit an interesting issue during E2E pipeline testing.The pipeline could still:fetch secrets from Key Vaultgenerate OKTA tokens successfullyexecute some GraphQL mutationsAt first glance, authentication looked completely fine.But certain GraphQL queries suddenly failed.Root CauseThe rotated credential was generated from the wrong OKTA client ID.The previous credential used a client with broader permissions. The new credential came from a client with only partial access scopes.So the system entered an awkward “half-working” state:token valid ✅authentication passed ✅authorization partial ⚠️ — mutation works ✅ — query fails ❌Decoded the token. Compared scopes against the previous credential.The diff was the answer.More than 6 repositories were impacted because the credential was shared through Key Vault across multiple pipelines.The Real LessonCredential rotation is not just rotating secrets.We are also rotating:identityscopesclaimsAPI permissionsassumptions embedded across systemsAnd partial failures are often harder to debug than total failures.Partial authorization failures send engineers into debugging: GraphQL resolvers, schemas, environments, caches, downstream APIs, and pipelines…before realizing the token itself changed semantically.TakeawayWhen something works halfway, don’t debug the code first.Decode the token. Check the scopes.The pipeline still had a key. Just not the key to every door.
