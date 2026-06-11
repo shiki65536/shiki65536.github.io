@@ -6,7 +6,7 @@ png: ./img/posts/patent-ai.png
 gif: ./img/posts/patent-ai.gif
 mp4: ./img/posts/patent-ai.mp4
 alt: Patent AI Translation System
-page: https://patent-ai-api.onrender.com/docs#/
+page: https://d2pdvicdu4ut8n.cloudfront.net/
 github: https://github.com/shiki65536/patent-ai
 category: Api
 tag: [RAG, AI, Claude, API, Python, supaBase, PostgreSQL]
