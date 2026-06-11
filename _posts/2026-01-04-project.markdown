@@ -9,6 +9,6 @@ alt: Patent AI Translation System
 page: https://d2pdvicdu4ut8n.cloudfront.net/
 github: https://github.com/shiki65536/patent-ai
 category: Api
-tag: [RAG, AI, Gemini, API, Python, supaBase, PostgreSQL]
+tag: [RAG, AI, Gemini, API, Python, supaBase, PostgreSQL, AWS]
 description: RAG-powered Patent Translation System with Claude.
 ---
