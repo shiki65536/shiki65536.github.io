@@ -9,6 +9,6 @@ alt: Object Detection
 page: https://d3vz5yv0yzzzcd.cloudfront.net/
 github: https://github.com/shiki65536/object-detect-album
 category: App
-tag: [REACT, AWS, Python, JavaScript]
-description: Detect objects in uploaded photos. Using Cognito, API gateway, Lambda, Dynamo DB, S3 Bucket.
+tag: [React, AWS, Python, JavaScript, Lambda, DynamoDB, S3, API Gateway]
+description: Serverless photo tagging platform that automatically detects objects and generates searchable image metadata.
 ---

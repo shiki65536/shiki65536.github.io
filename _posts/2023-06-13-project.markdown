@@ -10,5 +10,5 @@ github: https://github.com/shiki65536/githuber-rover
 alt: Githuber Rover
 category: Web Development
 tag: [React, CSS, RESTfulAPI, Chart.js, RWD]
-description: Searching githubers and showing their status with charts, infinite pagination.
+description: GitHub profile explorer with charts, analytics, and infinite-scroll search experience.
 ---

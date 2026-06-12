@@ -10,5 +10,5 @@ page: https://ted-watch-list.onrender.com/
 github: https://github.com/shiki65536/ted-watch-list
 category: App
 tag: [Mern, APP, YoutubeAPI, API, ReactJS, NodeJS, mongoDB]
-description: Web app to browse, favorite, mark as watched, and manage TED, TED-Ed, and TEDx YouTube videos.
+description: Full-stack video management platform for browsing, tracking, and organizing TED, TED-Ed, and TEDx content.
 ---

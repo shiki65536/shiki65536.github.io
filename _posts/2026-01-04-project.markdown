@@ -10,5 +10,5 @@ page: https://d2pdvicdu4ut8n.cloudfront.net/
 github: https://github.com/shiki65536/patent-ai
 category: Api
 tag: [RAG, AI, Gemini, API, Python, supaBase, PostgreSQL, AWS]
-description: RAG-powered Patent Translation System with Claude.
+description: RAG-powered patent translation platform using vector search, semantic retrieval, and LLM workflows.
 ---

@@ -9,6 +9,6 @@ alt: Head Orientation Detection
 page: https://jrdb.erc.monash.edu/dataset/social
 github: https://github.com/shiki65536/head_orientation_detection
 category: App
-tag: [Python, JRDB, dataset, Computer Vision]
-description: Detect head orientation by key joints for JRDB.
+tag: [Python, JRDB, dataset, Computer Vision, Deep Learning, Research]
+description: Computer vision research project for estimating head orientation from human pose keypoints on the JRDB dataset.
 ---
