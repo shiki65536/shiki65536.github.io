@@ -9,7 +9,6 @@ alt: task assigner
 github: https://github.com/shiki65536/task-assigner
 page: https://cute-travesseiro-e1e4f8.netlify.app/
 category: Web Development
-tag: [React, Javascipt, CSS, firebase, RWD]
-description: Task assginer. Login an open forum, check/publish assignments, tag members, and discuss with each other. 
-
+tag: [React, Javascript, CSS, firebase, RWD]
+description: Task assigner. Login an open forum, check/publish assignments, tag members, and discuss with each other.
 ---
