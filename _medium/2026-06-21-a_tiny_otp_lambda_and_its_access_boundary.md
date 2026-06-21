@@ -1,0 +1,10 @@
+---
+layout: default
+title: "A Tiny OTP Lambda and Its Access Boundary"
+date: Sun, 21 Jun 2026 06:46:39 +0000
+excerpt: "This week I looked back at a s"
+link: "https://medium.com/@shiki65536/a-tiny-otp-lambda-and-its-access-boundary-7700344e1fb9?source=rss-374d8f1302a3------2"
+image: "https://cdn-images-1.medium.com/max/1024/1*S0uRDLzKIEOwukN3b4ijgg.jpeg"
+tags: ["devops", "cloud-security", "terraform", "serverless", "aws-lambda"]
+---
+This week I looked back at a small internal OTP utility I developed.The tool itself is tiny: a contractor logs into AWS, hit the endpoint, invokes an OTP Lambda, and receives a temporary one-time password.The Lambda reads a TOTP secret from AWS Systems Manager Parameter Store and generates the OTP using pyotp. The interesting part is not the OTP logic. The interesting part is the system design around access control.Architecture &amp; Access BoundaryThe contractor does not have permission to read SSM Parameter Store directly. They only have permission to invoke a specific Lambda function.So the access boundary is:Contractor → Lambda Invoke permission → Lambda execution role → SSM SecureStringIn other words, the contractor can request an OTP, but cannot access the underlying secret.The setup also attaches the Lambda to private subnets inside an existing company VPC. This does not mean the contractor enters the VPC. The contractor triggers the Lambda through the exposed invoke path. The Lambda runtime is what runs inside the VPC private subnets.This creates two separate paths:Control path: Contractor → Endpoint → Lambda InvokeFunction APIRuntime path: Lambda runtime → private subnet networking → SSM / internal AWS resourcesFor such a small tool, private subnets may look like overkill. But in an enterprise environment, even small utilities often follow the existing VPC and deployment pattern for consistency, controlled networking, and future extensibility.Take AwayThe tool is small. The infrastructure around it is not.That is what made it a useful learning case: IAM boundaries, Lambda invocation, VPC-attached runtime, private subnet placement, and secret access design, all in one tiny OTP helper.
