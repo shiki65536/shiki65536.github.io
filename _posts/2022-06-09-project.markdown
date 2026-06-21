@@ -9,6 +9,6 @@ alt: expense tracker
 github: https://github.com/shiki65536/expense-tracker
 page: https://expense-tracker-9zik.onrender.com
 category: Web Development
-tag: [React, Javascipt, CSS, MERN, redux, mongodb]
+tag: [React, Javascript, CSS, MERN, redux, mongodb]
 description: Basic MERN tracker to record expense.<br>Sample account:password<br>guest@gmail.com:123456<br>** Doesn't work with firefox
 ---
